@@ -1,0 +1,25 @@
+<div class="container">
+    <h2 class="text-center">New project</h2>
+    <div class="form-group">
+        <%= form_with scope: :project, local: true, url: projects_path do |form| %>
+            <div class="form-group">
+                <%= form.label  :title %>
+                <%= form.text_field  :title, class: "form-control" %>
+            </div>
+            <div class="form-group">
+                <%= form.label  :description %>
+                <%= form.text_field  :description, class: "form-control" %>
+            </div>
+            <div class="form-group">
+                <%= form.label  :start_date %>
+                <%= form.text_field  :start_date, class: "form-control" %>
+            </div>
+            <div class="form-group">
+                <%= form.label  :end_date %>
+                <%= form.text_field  :end_date, class: "form-control" %>
+            </div>
+            <%= form.submit class: "btn btn-primary"%>
+        <% end %>
+    </div>
+</div>
+
