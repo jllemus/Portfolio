@@ -1,17 +1,27 @@
 @import "bootstrap/dist/css/bootstrap";
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import '@fortawesome/fontawesome-free/scss/fontawesome';
+@import '@fortawesome/fontawesome-free/scss/solid';
+@import '@fortawesome/fontawesome-free/scss/regular';
+@import '@fortawesome/fontawesome-free/scss/brands';
+@import '@fortawesome/fontawesome-free/scss/v4-shims';
 
+
+html {
+  height: 100%;
+}
 body {
-    height: 100%;
-  }
-
+  min-height: 100%;
+}
 .navbar {
-    background-color: #FDF6EA !important;
-    background-color: black !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .nav-link {
     color: white !important;
-  }
+}
+
 #logo {
     float: left;
     font-size: 1.7em;
@@ -19,7 +29,12 @@ body {
     text-transform: uppercase;
     letter-spacing: -1px;
     font-weight: bold;
-  }
+}
+
+#color-red{
+  color: #DB4437;
+}
+
 
 .jumbotron {
     background-image: asset-url('portfolio4.jpg');
@@ -27,19 +42,77 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 425px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-.jumbotron p, h1{
+.jumbotron p{
     color: white;
     text-shadow: 2px 2px 4px black;
 }
+
+.jumbotron h1{
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
 #home-container {
     margin-top: 25px;
 }
-#page-content {
-    flex: 1 0 auto;
-  }
-  
+
 #sticky-footer {
     flex-shrink: none;
+}
+
+#form-background{
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#save-button{
+  background-color: #00cffa;
+  color: white;
+}
+#send-button{
+  background-color: #d82212;
+  color: white;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+.user_icon{
+  transition: box-shadow .3s;
+  background-color: #DB4437;
+  border-radius: 15px;
+  padding:8px;
+  color: white;
+}
+
+.user_icon:hover{
+  background-color: #d82212;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+  color: white;
+}
+
+.user_icon:focus{
+  outline:0;
+}
+
+.image{
+  size: 15px;
+}
+
+#twitter-icon{
+  color: #1DA1F2;
+}
+#linkedin-icon{
+  color: #2867B2;
+}
+
+#github-icon{
+  color: #24292e;
 }

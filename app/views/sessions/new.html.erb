@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row justify-content-center m-5">
+        <div class="col col-lg-6">
+            <div class="card text-center shadow">
+                <div class="card-body">
+                    <h5 class="card-title text-center mb-5">Login</h5>
+                        <%= form_with(model: @user, url: sessions_path) do |f| %>
+                            <div class="field">
+                                <%= f.label :username %> <br/>
+                                <%= f.text_field :username %>
+                            </div>
+                            <p/>
+                                <div class="field">
+                                    <%= f.label :password %> <br/>
+                                    <%= f.password_field :password %>
+                                </div>
+                            <p/>
+                            <div class="actions">
+                                <%= f.submit "Login", class: "btn btn-danger", type: "submit" %>
+                            </div>
+                        <% end %> 
+                </div>
+                <div class="card-footer text-center ">
+                    <a href="#"> Forgot password? </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

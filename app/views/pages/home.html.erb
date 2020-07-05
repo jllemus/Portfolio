@@ -1,17 +1,26 @@
 <div id="page-content">
     <div class="container" id="home-container">
         <div class="jumbotron text-center shadow" >
-            <h1 class="display-4">Portfolio</h1>
-            <p class="lead">This is a webpage developed in Ruby on rails to show information about me and my curriculum.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Sign up!</a>
+            <h1 class="display-4">José Lemus</h1>
+            <p class="lead">Electronic engineer. Passionate about web development</p>
+            <hr class="my-4" style="border: 1px solid #d82212; ">
+            <div class="row">
+                <div class="col-4">
+                    <%= image_tag "rails.png", size:"200x76"%>
+                </div>
+                <div class="col-4">
+                    <%= image_tag "django.png", size:"200x200"%>
+                </div>
+                <div class="col-4">
+                    <%= image_tag "react.png", size: "200x141"%>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+<footer id="sticky-footer" class="py-2 bg-dark text-white-50">
     <div class="container text-center">
-      <small>Copyright &copy; <%= link_to "José Lemus", "https://www.linkedin.com/in/jose-luis-lemus-florez-a34943164/", class: "text-white" %></small>
+      <small>Copyright &copy; <%= link_to "José Lemus", "https://www.linkedin.com/in/jose-luis-lemus-florez-a34943164", class: "text-white" %></small>
     </div>
   </footer>

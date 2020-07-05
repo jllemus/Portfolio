@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
     <title>Portafolio</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,8 +10,9 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="d-flex flex-column">
+  <body class="d-flex flex-column" id="main-body">
     <%= render 'layouts/navbar' %>
+    <%= render 'layouts/messages'%>
     <%= yield %>
   </body>
 </html>
